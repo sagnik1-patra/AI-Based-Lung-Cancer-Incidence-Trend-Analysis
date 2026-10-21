@@ -1,0 +1,87 @@
+{
+    "project": "AI-Based Lung Cancer Incidence Trend Analysis",
+    "algorithm": "Particle Swarm Optimization",
+    "created_at": "2026-10-21T09:49:21.427958+00:00",
+    "dataset": {
+        "years": [
+            2020,
+            2021,
+            2022
+        ],
+        "cases": [
+            98278,
+            100792,
+            103371
+        ]
+    },
+    "optimized_parameters": {
+        "slope": 2546.5000002408974,
+        "intercept": 98267.16666654803,
+        "base_year": 2020
+    },
+    "baseline_metrics": {
+        "MAE": 14.444444444442828,
+        "MSE": 234.72222222222226,
+        "RMSE": 15.32064692570853,
+        "R2_Score": 0.9999457081642019,
+        "MAPE_Percent": 0.014333205963512811,
+        "Training_Fit_Percent": 99.98566679403649
+    },
+    "pso_metrics": {
+        "MAE": 14.444444403687763,
+        "MSE": 234.72222222211715,
+        "RMSE": 15.3206469257051,
+        "R2_Score": 0.999945708164202,
+        "MAPE_Percent": 0.014333205927078083,
+        "Training_Fit_Percent": 99.98566679407293
+    },
+    "optimization": {
+        "best_training_mse": 234.72222222211715,
+        "num_particles": 40,
+        "max_iterations": 150,
+        "inertia_weight": 0.7,
+        "cognitive_coefficient": 1.5,
+        "social_coefficient": 1.5
+    },
+    "future_predictions": [
+        {
+            "Year": 2023,
+            "PSO_Predicted_Cases": 105907
+        },
+        {
+            "Year": 2024,
+            "PSO_Predicted_Cases": 108453
+        },
+        {
+            "Year": 2025,
+            "PSO_Predicted_Cases": 111000
+        },
+        {
+            "Year": 2026,
+            "PSO_Predicted_Cases": 113546
+        },
+        {
+            "Year": 2027,
+            "PSO_Predicted_Cases": 116093
+        },
+        {
+            "Year": 2028,
+            "PSO_Predicted_Cases": 118639
+        },
+        {
+            "Year": 2029,
+            "PSO_Predicted_Cases": 121186
+        },
+        {
+            "Year": 2030,
+            "PSO_Predicted_Cases": 123732
+        }
+    ],
+    "limitations": [
+        "Only three historical observations are available.",
+        "Evaluation metrics represent training fit only.",
+        "No independent test dataset is available.",
+        "Future projections assume a continuing linear trend.",
+        "PSO optimizes the same two-parameter linear model."
+    ]
+}

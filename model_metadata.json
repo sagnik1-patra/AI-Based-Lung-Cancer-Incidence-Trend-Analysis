@@ -1,0 +1,79 @@
+{
+    "project_name": "AI-Based Lung Cancer Incidence Trend Analysis",
+    "created_at": "2026-10-21T09:40:05.198608+00:00",
+    "dataset_information": {
+        "file_name": "RS_Session_258_AU_1555_C_to_D.csv",
+        "total_years": 3,
+        "years": [
+            2020,
+            2021,
+            2022
+        ],
+        "cases": [
+            98278,
+            100792,
+            103371
+        ]
+    },
+    "statistics": {
+        "minimum_cases": 98278.0,
+        "maximum_cases": 103371.0,
+        "average_cases": 100813.66666666667,
+        "standard_deviation": 2079.2649876552264,
+        "overall_growth_percent": 5.182238140784306
+    },
+    "model_information": {
+        "algorithm": "LinearRegression",
+        "coefficient": 2546.499999999999,
+        "intercept": 98267.16666666667,
+        "base_year": 2020
+    },
+    "training_metrics": {
+        "MAE": 14.444444444442828,
+        "MSE": 234.72222222222226,
+        "RMSE": 15.32064692570853,
+        "R2_Score": 0.9999457081642019,
+        "MAPE_Percent": 0.014333205963512811
+    },
+    "evaluation_note": "Metrics are calculated on training observations. They do not measure out-of-sample performance.",
+    "future_predictions": [
+        {
+            "year": 2023,
+            "predicted_cases": 105907
+        },
+        {
+            "year": 2024,
+            "predicted_cases": 108453
+        },
+        {
+            "year": 2025,
+            "predicted_cases": 111000
+        },
+        {
+            "year": 2026,
+            "predicted_cases": 113546
+        },
+        {
+            "year": 2027,
+            "predicted_cases": 116093
+        },
+        {
+            "year": 2028,
+            "predicted_cases": 118639
+        },
+        {
+            "year": 2029,
+            "predicted_cases": 121186
+        },
+        {
+            "year": 2030,
+            "predicted_cases": 123732
+        }
+    ],
+    "limitations": [
+        "Only three historical observations are available.",
+        "No independent validation dataset is available.",
+        "Future projections assume a continuing linear trend.",
+        "Results should not be used for clinical or public health decisions."
+    ]
+}

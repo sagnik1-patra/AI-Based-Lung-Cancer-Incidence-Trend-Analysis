@@ -1,0 +1,28 @@
+project:
+  name: AI-Based Lung Cancer Incidence Trend Analysis
+  description: Historical incidence analysis and exploratory linear trend projections
+  country: India
+  disease: Lung Cancer
+dataset:
+  file_name: RS_Session_258_AU_1555_C_to_D.csv
+  total_records: 3
+  start_year: 2020
+  end_year: 2022
+  features:
+  - Year
+  target: Cases
+model:
+  algorithm: LinearRegression
+  base_year: 2020
+  training_type: Full Historical Dataset
+  independent_test_set: false
+  random_state: null
+forecast:
+  start_year: 2023
+  end_year: 2030
+  type: Exploratory Extrapolation
+output_files:
+  h5: lung_cancer_model.h5
+  pkl: lung_cancer_model.pkl
+  yaml: config.yaml
+  json: model_metadata.json

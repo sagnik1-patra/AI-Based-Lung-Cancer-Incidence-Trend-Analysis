@@ -1,0 +1,28 @@
+project:
+  name: AI-Based Lung Cancer Incidence Trend Analysis
+  optimization_algorithm: Particle Swarm Optimization
+  country: India
+  disease: Lung Cancer
+dataset:
+  filename: RS_Session_258_AU_1555_C_to_D.csv
+  start_year: 2020
+  end_year: 2022
+  observations: 3
+pso_parameters:
+  num_particles: 40
+  max_iterations: 150
+  inertia_weight: 0.7
+  cognitive_coefficient: 1.5
+  social_coefficient: 1.5
+  random_seed: 42
+model:
+  type: PSO Optimized Linear Trend
+  slope: 2546.5000002408974
+  intercept: 98267.16666654803
+  base_year: 2020
+forecast:
+  end_year: 2030
+  type: Exploratory Extrapolation
+evaluation:
+  type: In-Sample Training Fit
+  independent_test_set: false

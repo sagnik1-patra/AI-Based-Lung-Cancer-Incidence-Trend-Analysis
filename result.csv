@@ -1,0 +1,4 @@
+Year,Actual_Cases,Model_Fitted_Cases,Residual,Absolute_Error,Error_Percentage
+2020,98278,98267,10.83,10.83,0.011
+2021,100792,100814,-21.67,21.67,0.0215
+2022,103371,103360,10.83,10.83,0.0105

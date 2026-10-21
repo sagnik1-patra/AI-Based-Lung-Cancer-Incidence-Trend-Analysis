@@ -1,0 +1,26 @@
+project:
+  name: AI-Based Lung Cancer Incidence Trend Analysis
+  optimization_algorithm: Artificial Immune System
+  ais_method: Clonal Selection Algorithm
+  country: India
+dataset:
+  filename: RS_Session_258_AU_1555_C_to_D.csv
+  start_year: 2020
+  end_year: 2022
+  observations: 3
+ais_parameters:
+  population_size: 40
+  generations: 150
+  elite_count: 8
+  clones_per_elite: 8
+  random_replacements: 6
+  mutation_rate: 0.15
+  random_seed: 42
+model:
+  type: Linear Trend
+  slope: 2546.499999999999
+  intercept: 98267.16666666667
+  base_year: 2020
+forecast:
+  end_year: 2030
+  type: Exploratory Extrapolation
